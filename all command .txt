@@ -1,0 +1,9 @@
+npx playwright test file_name --repeat-each=3
+
+npx playwright test --ui   for watch mode , video can be seen there
+
+retry ==
+npx playeright test file_name -- 
+
+to do parallel execution :go to confir filr playwrighttehn set true at fullyParallel
+npx playwright test file-name --workers 3(enter number)
