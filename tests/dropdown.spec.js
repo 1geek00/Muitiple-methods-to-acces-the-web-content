@@ -13,11 +13,15 @@ test('dropdown', async({page})=>{
   const country = page.locator("#Country");
 
 const allElements = await country.locator("option").all();
-
+let ddstatus=false;
 for (let i = 0; i < allElements.length; i++) {
     const element = allElements[i];
 
     const value = await element.textContent();
+    if (value.includes("India")){
+       ddstatus=true;
+       break;
+    }
 
     console.log("Country is:", value);
 }
